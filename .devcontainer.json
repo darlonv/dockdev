@@ -1,8 +1,11 @@
 {
-	"image": "openjdk",
+	"image": "darlon/openjdk",
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"vscjava.vscode-java-pack",
+				"vscjava.vscode-java-debug",
+				"vscjava.vscode-java-test"
 			]
 		}
 	}
