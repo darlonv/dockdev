@@ -1,5 +1,8 @@
 {
 	"image": "darlon/openjdk",
+	// "build": {
+	// 	"dockerfile": "Dockerfile"
+	// },
 	"customizations": {
 		"vscode": {
 			"extensions": [
