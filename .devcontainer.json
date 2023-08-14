@@ -1,0 +1,9 @@
+{
+	"image": "openjdk",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+			]
+		}
+	}
+}
