@@ -10,3 +10,5 @@ docker tag darlon/openjdk:${VERSION} darlon/openjdk
 docker login
 docker push darlon/openjdk:${VERSION}
 docker push darlon/openjdk
+
+
