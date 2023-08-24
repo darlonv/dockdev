@@ -11,3 +11,5 @@ docker login
 docker push darlon/openjdk:${VERSION}
 docker push darlon/openjdk
 
+
+
