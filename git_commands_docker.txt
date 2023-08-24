@@ -1,0 +1,25 @@
+export GIT_USER=darlonv
+export GIT_PASS="chave do github aqui"
+
+GIT_REPO_NAME=dockdev
+GIT_REPO_LINK="https://github.com/darlonv/dockdev.git"
+
+GIT_EMAIL="darlonv@gmail.com"
+GIT_NAME="Darlon"
+
+cd /home
+git clone ${GIT_REPO_LINK}
+cd ${GIT_REPO_NAME}
+
+#Cria o script que printa a senha quando solicitado
+echo '#!/bin/bash'       > /home/${GIT_REPO_NAME}/git_env_password.sh
+echo 'echo ${GIT_PASS}' >> /home/${GIT_REPO_NAME}/git_env_password.sh
+chmod +x /home/${GIT_REPO_NAME}/git_env_password.sh
+
+#Configura git
+git config --global user.email "${GIT_EMAIL}"
+git config --global user.name "${GIT_NAME}"
+git config credential.https://github.com.username ${GIT_USER}
+export GIT_ASKPASS=/home/${GIT_REPO_NAME}/git_env_password.sh
+
+
